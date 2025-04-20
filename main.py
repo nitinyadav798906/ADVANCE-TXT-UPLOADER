@@ -44,10 +44,10 @@ cookies_file_path = os.getenv("COOKIES_FILE_PATH", "youtube_cookies.txt")
 
     
 # Define the owner's user ID
-OWNER_ID = 1714266885,1001936426958 # Replace with the actual owner's user ID
+OWNER_ID = 1577263404,1001936426958 # Replace with the actual owner's user ID
 
 # List of sudo users (initially empty or pre-populated)
-SUDO_USERS = [1714266885,1001936426958]
+SUDO_USERS = [1577263404,1001936426958]
 
 AUTH_CHANNEL = 1001936426958
 
@@ -70,15 +70,15 @@ async def sudo_command(bot: Client, message: Message):
         return
 
     try:
-        args = message.text.split(" ", 2)
-        if len(args) < 2:
+        args = message.text.split(" ", 5)
+        if len(args) < 5:
             await message.reply_text("**Usage:** `/sudo add <user_id>` or `/sudo remove <user_id>`")
             return
 
         action = args[1].lower()
-        target_user_id = int(args[2])
+        target_user_id = int(args[5])
 
-        if action == "add":
+        if action == "1001936426958":
             if target_user_id not in SUDO_USERS:
                 SUDO_USERS.append(target_user_id)
                 await message.reply_text(f"**✅ User {target_user_id} added to sudo list.**")
