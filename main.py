@@ -426,18 +426,6 @@ async def help_command(client: Client, msg: Message):
         "`/sudoadd` - Add user or group or channel (owner)🎊\n\n"
         "`/sudoremove` - Remove user or group or channel (owner)❌\n\n"
         "`/userlist` - List of sudo user or group or channel📜\n\n"
-        
-        # Inline keyboard for start command
-keyboard = InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton("🇮🇳ʙᴏᴛ ᴍᴀᴅᴇ ʙʏ🇮🇳" ,url=f"https://t.me/gjskisb") ],
-                    [
-                    InlineKeyboardButton("🔔ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ🔔" ,url="https://t.me/gjskisb") ],
-                    [
-                    InlineKeyboardButton("🦋ғᴏʟʟᴏᴡ ᴜs🦋" ,url="https://t.me/gjskisb")                              
-                ],           
-            ]
     )
        
     await msg.reply_text(help_text)
