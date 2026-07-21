@@ -8,8 +8,6 @@
 
 [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/nitinyadav798906/ADVANCE-TXT-UPLOADER)
 
-![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=Welcome+To+Txt+Uploader+Bot+!)
-
 ## Credit
 
 🥳 Credit Goes To [💥ᴛᴜsʜᴀʀ💥]
